@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CA20DAC42D8E47100054D1FC /* MemoryGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA20DAC32D8E47100054D1FC /* MemoryGame.swift */; };
+		CA20DAC62D8E4A8F0054D1FC /* EmojiMemoryGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA20DAC52D8E4A8F0054D1FC /* EmojiMemoryGame.swift */; };
 		CA3CC95C2D8BA069005358D0 /* MemoriaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3CC95B2D8BA069005358D0 /* MemoriaApp.swift */; };
-		CA3CC95E2D8BA069005358D0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3CC95D2D8BA069005358D0 /* ContentView.swift */; };
+		CA3CC95E2D8BA069005358D0 /* EmojiMemoryGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3CC95D2D8BA069005358D0 /* EmojiMemoryGameView.swift */; };
 		CA3CC9602D8BA06B005358D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA3CC95F2D8BA06B005358D0 /* Assets.xcassets */; };
 		CA3CC9632D8BA06B005358D0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA3CC9622D8BA06B005358D0 /* Preview Assets.xcassets */; };
 		CA3CC96D2D8BA06B005358D0 /* MemoriaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3CC96C2D8BA06B005358D0 /* MemoriaTests.swift */; };
@@ -34,9 +36,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CA20DAC32D8E47100054D1FC /* MemoryGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryGame.swift; sourceTree = SOURCE_ROOT; };
+		CA20DAC52D8E4A8F0054D1FC /* EmojiMemoryGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiMemoryGame.swift; sourceTree = "<group>"; };
 		CA3CC9582D8BA069005358D0 /* Memoria.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Memoria.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA3CC95B2D8BA069005358D0 /* MemoriaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoriaApp.swift; sourceTree = "<group>"; };
-		CA3CC95D2D8BA069005358D0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CA3CC95D2D8BA069005358D0 /* EmojiMemoryGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiMemoryGameView.swift; sourceTree = "<group>"; };
 		CA3CC95F2D8BA06B005358D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CA3CC9622D8BA06B005358D0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CA3CC9682D8BA06B005358D0 /* MemoriaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MemoriaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -94,8 +98,10 @@
 		CA3CC95A2D8BA069005358D0 /* Memoria */ = {
 			isa = PBXGroup;
 			children = (
+				CA20DAC32D8E47100054D1FC /* MemoryGame.swift */,
+				CA20DAC52D8E4A8F0054D1FC /* EmojiMemoryGame.swift */,
 				CA3CC95B2D8BA069005358D0 /* MemoriaApp.swift */,
-				CA3CC95D2D8BA069005358D0 /* ContentView.swift */,
+				CA3CC95D2D8BA069005358D0 /* EmojiMemoryGameView.swift */,
 				CA3CC95F2D8BA06B005358D0 /* Assets.xcassets */,
 				CA3CC9612D8BA06B005358D0 /* Preview Content */,
 			);
@@ -257,8 +263,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA3CC95E2D8BA069005358D0 /* ContentView.swift in Sources */,
+				CA3CC95E2D8BA069005358D0 /* EmojiMemoryGameView.swift in Sources */,
 				CA3CC95C2D8BA069005358D0 /* MemoriaApp.swift in Sources */,
+				CA20DAC42D8E47100054D1FC /* MemoryGame.swift in Sources */,
+				CA20DAC62D8E4A8F0054D1FC /* EmojiMemoryGame.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
