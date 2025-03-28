@@ -9,7 +9,8 @@ import SwiftUI
 
  struct EmojiMemoryGameView: View {
     @ObservedObject var viewModel: EmojiMemoryGame
-    
+     private let aspectRatio: CGFloat = 2/3
+
     
     var body: some View {
         VStack{
@@ -28,25 +29,14 @@ import SwiftUI
         .padding()
     }
     
-    var cards: some View {
-        let aspectRatio: CGFloat = 2/3
-        return GeometryReader { geometry in
-            let gridItemSize = gridItemsWidthThatFits(
-                count: viewModel.cards.count,
-                size: geometry.size,
-                atAspectRatio: aspectRatio
-            )
-            LazyVGrid(columns: [GridItem(.adaptive(minimum: gridItemSize), spacing: 0)], spacing: 0){
-                ForEach(viewModel.cards) { card in
-                    CardView(card)
-                        .aspectRatio( aspectRatio, contentMode: .fit)
-                        .padding(4)
-                        .onTapGesture {
-                            viewModel.choose(card)
-                        }
-                      
+    private var cards: some View {
+        AspectVGrid(viewModel.cards, aspectRatio: aspectRatio) { card in
+            CardView(card)
+                .aspectRatio( aspectRatio, contentMode: .fit)
+                .padding(4)
+                .onTapGesture {
+                    viewModel.choose(card)
                 }
-            }
         }
         .frame(height: 650)
         .foregroundColor(.orange)
