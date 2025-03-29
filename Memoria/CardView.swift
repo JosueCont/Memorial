@@ -26,30 +26,26 @@ struct CardView: View {
             static let largest: CGFloat = 200
             static let scaleFactor = smallest / largest
         }
+        
+        struct Pie {
+            static let inset: CGFloat = 5
+            static let opacity: CGFloat = 0.4
+        }
     }
     
     var body: some View {
-        ZStack(content: {
-            let base = RoundedRectangle(cornerRadius: 12)
-            Group {
-                base.fill(.white)
-                base.strokeBorder(lineWidth: Constats.lineWidth)
-                Circle()
-                    .opacity(0.4)
-                    .overlay(
-                        Text(card.content)
-                            .font(.system(size: Constats.FontSize.largest))
-                            .minimumScaleFactor(Constats.FontSize.scaleFactor)
-                            .aspectRatio(1, contentMode: .fit)
-                    )
-                    .padding(Constats.inset)
-
-            }
-            .opacity(card.isFaceUp ? 1: 0)
-            base.fill().opacity(card.isFaceUp ? 0 : 1)
-            
-        })
-        .opacity(card.isFaceUp || !card.isMatched ? 1 : 0)
+        Pie(endAngle: .degrees(200))
+            .opacity(Constats.Pie.opacity)
+            .overlay(
+                Text(card.content)
+                    .font(.system(size: Constats.FontSize.largest))
+                    .minimumScaleFactor(Constats.FontSize.scaleFactor)
+                    .aspectRatio(1, contentMode: .fit)
+                    .padding(Constats.Pie.inset)
+            )
+            .padding(Constats.inset)
+            .cardify(isFaceUp: card.isFaceUp)
+            .opacity(card.isFaceUp || !card.isMatched ? 1 : 0)
     }
 }
 
