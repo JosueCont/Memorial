@@ -20,6 +20,7 @@
 		CA3CC96D2D8BA06B005358D0 /* MemoriaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3CC96C2D8BA06B005358D0 /* MemoriaTests.swift */; };
 		CA3CC9772D8BA06B005358D0 /* MemoriaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3CC9762D8BA06B005358D0 /* MemoriaUITests.swift */; };
 		CA3CC9792D8BA06B005358D0 /* MemoriaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3CC9782D8BA06B005358D0 /* MemoriaUITestsLaunchTests.swift */; };
+		CA72D6462D9A002D00BB0665 /* FlyingNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA72D6452D9A002D00BB0665 /* FlyingNumber.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		CA3CC9722D8BA06B005358D0 /* MemoriaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MemoriaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA3CC9762D8BA06B005358D0 /* MemoriaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoriaUITests.swift; sourceTree = "<group>"; };
 		CA3CC9782D8BA06B005358D0 /* MemoriaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoriaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CA72D6452D9A002D00BB0665 /* FlyingNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlyingNumber.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 		CA3CC95A2D8BA069005358D0 /* Memoria */ = {
 			isa = PBXGroup;
 			children = (
+				CA72D6452D9A002D00BB0665 /* FlyingNumber.swift */,
 				CA20DACB2D963E3F0054D1FC /* Pie.swift */,
 				CA20DAC32D8E47100054D1FC /* MemoryGame.swift */,
 				CA20DAC52D8E4A8F0054D1FC /* EmojiMemoryGame.swift */,
@@ -277,6 +280,7 @@
 			files = (
 				CA3CC95E2D8BA069005358D0 /* EmojiMemoryGameView.swift in Sources */,
 				CA3CC95C2D8BA069005358D0 /* MemoriaApp.swift in Sources */,
+				CA72D6462D9A002D00BB0665 /* FlyingNumber.swift in Sources */,
 				CA20DACE2D98A39D0054D1FC /* Cardify.swift in Sources */,
 				CA20DAC42D8E47100054D1FC /* MemoryGame.swift in Sources */,
 				CA20DAC82D96190F0054D1FC /* AspectVGrid.swift in Sources */,
